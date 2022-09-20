@@ -4,38 +4,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js" type="text/javascript"></script>
+    <script src="index.js" defer ></script>
 </head>
 <body>
     <div class ="library">
         <div class = "books">
             <h2>welcome to Odin library</h2>
-            <span class = "catalog">
-                <div>
-                    <p> The hobbit</p>
-                    <p> j.k james</p>
-                    <p> 456</p>
-                    <p> read*</p>
-                </div>
-                
-                <div id="log">
-                    <p id="dtitle"></p>
-                    <p id="dauthor"></p>
-                    <p id="dpages"></p>
-                    <p id="dreadOption"></p>
-                </div>
-                <button type="button" id="delete" onclick="removeBook()">Delete</button>
-                
-            </span>
-            <div class="add-form">
-                <form id="books" method="post">
-                    <input type="text" id= "title"placeholder=" title"><br>
+            <div id = "catalog">
+            </div>
+        
+            <div id="addForm">
+                <form id="books" action = "#">
+                    <input  type="text" id= "title"placeholder=" title"><br>
                     <input type="text" id="author" placeholder=" author"><br>
-                    <input type="text" id ="page" placeholder=" pages"><br>
+                    <input type="number" id ="page" placeholder=" pages" min="0"><br>
                     <input type="checkbox" id="readOption" name="read"><br> 
-                    <input type="submit" id="Addbook" onclick="addBookToLibrary() ">
+                    <input type="submit" id="Addbook" onclick="addBookToLibrary()">
                 </form>
-                <button type="button" id="btn" >Display</button>
             </div>
         </div>
      </div>    

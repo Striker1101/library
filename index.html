@@ -5,22 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="index.js" defer ></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class ="library">
+    
         <div class = "books">
-            <h2>welcome to Odin library</h2>
+            <h1 class="head">Welcome to Odin library</h1>
             <div id = "catalog">
             </div>
         
             <div id="addForm">
                 <form id="books" action = "#">
-                    <input  type="text" id= "title"placeholder=" title"><br>
-                    <input type="text" id="author" placeholder=" author"><br>
-                    <input type="number" id ="page" placeholder=" pages" min="0"><br>
-                    <input type="checkbox" id="readOption" name="read"><br> 
-                    <input type="submit" id="Addbook" onclick="addBookToLibrary()">
-                </form>
+                    <label>TITLE</TITle></label>
+                    <input  type="text" id= "title" title=" title"><br>
+                    
+                    <label>AUTHOR</label>
+                    <input type="text" id="author" title=" author"><br>
+                    
+                    <LABEl> PAGES</LABEl>
+                    <input type="number" id ="page" title=" pages" min="0"><br>
+                    
+                    <LAbel> CLICK IF YOU HAVE READ BOOK</LAbel>
+                    <input type="checkbox" id="readOption" name="read"><br>
+                </form> 
+                        <!-- Draggable DIV -->
+                        <div id="mydiv">
+                        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+                        <div id="mydivheader">
+                            <input type="submit" id="Addbook" onclick="addBookToLibrary()">
+                        </div>
+
+                         </div>
+                
             </div>
         </div>
      </div>    
